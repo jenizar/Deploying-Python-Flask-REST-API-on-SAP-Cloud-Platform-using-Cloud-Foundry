@@ -1,0 +1,15 @@
+<article id="search">
+   <h2 class="major">Get tweet data #Twitter</h2>
+   <form method="post" action="/">
+         <p>Name <input type = "text" name = "name" placeholder="Twitter Account @" />
+<label for="name">example: @WorldBank</label></p>
+         <p>Start Date <input type = "text" name = "sdate" placeholder="YYYY-MM-DD" /></p>
+         <p>End Date <input type = "text" name = "edate" placeholder="YYYY-MM-DD" /></p>
+       <input name="search" type="submit" value="See Tweets" class="special" />
+       <input type="reset" value="Reset" />
+   </form>
+
+{% for item in result %}
+    <p> {{ item }} </p>
+{% endfor %}
+</article>
